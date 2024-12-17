@@ -1,57 +1,39 @@
-public class Book {
-        //Initilalizing the necessary variables
-        private String bookTitle;
-        private String bookGenre;
-        private String bookAuthor;
-        private boolean bookAvailability;
-        private String bookYear;
-        private String bookISBN;
+ public class Book {
+        private String bookId;
+        private String title;
+        private boolean isAvailable;
 
-
-        // initializing the constructor for the book class
-        public Book(String bookTitle, String bookGenre, String bookAuthor, boolean bookAvailability, String bookYear, String bookISBN) {
-            this.bookTitle = bookTitle;
-            this.bookGenre = bookGenre;
-            this.bookAuthor = bookAuthor;
-            this.bookAvailability = true;
+        // Constructor
+        public Book(String bookId, String title) {
+            this.bookId = bookId;
+            this.title = title;
+            this.isAvailable = true;
         }
 
-        public String getBookTitle() {
-            return bookTitle;
+        // Getters
+        public String getBookId() {
+            return bookId;
         }
-        public void setBookTitle(String bookTitle) {
-            this.bookTitle = bookTitle;
-        }
-        public String getBookGenre() {
-            return bookGenre;
-        }
-        public void setBookGenre(String bookGenre) {
-            this.bookGenre = bookGenre;
-        }
-        public String getBookAuthor() {
-            return bookAuthor;
-        }
-        public void setBookAuthor(String bookAuthor) {
-            this.bookAuthor = bookAuthor;
-        }
-        public boolean getBookAvailability() {
-            return bookAvailability;
-        }
-        public void setBookAvailability(boolean bookAvailability) {
 
+        public String getTitle() {
+            return title;
         }
-        public String getBookYear() {
-            return bookYear;
-        }
-        public void setBookYear(String bookYear) {
-            this.bookYear = bookYear;
-        }
-        public String getBookISBN() {
 
-            return bookISBN;
+        public boolean isAvailable() {
+            return isAvailable;
         }
-        public void setBookISBN(String bookISBN) {
-            this.bookISBN = bookISBN;
+
+        // Borrow book
+        public void borrowBook() {
+            if (isAvailable) {
+                isAvailable = false;
+            } else {
+                System.out.println("Book is already borrowed.");
+            }
         }
-        
-}
+
+        // Return book
+        public void returnBook() {
+            isAvailable = true;
+        }
+    }
