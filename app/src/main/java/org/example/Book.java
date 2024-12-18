@@ -2,6 +2,8 @@
         private String bookId;
         private String title;
         private boolean isAvailable;
+        private String yearPublished;
+        private String authorName 
 
         // Constructor
         public Book(String bookId, String title) {
