@@ -6,9 +6,9 @@ public class App {
             Library library = new Library();
 
             // Add books
-            library.addBook("B001", "The Great Gatsby", "George Orwell");
-            library.addBook("B002", "1984", "Mitch Peller");
-            library.addBook("B003", "To Kill a Mockingbird", "Frank Furtick");
+            library.addBook("1984", "George Orwell", 1949);
+            library.addBook("B002", "Dimitri's game", 2006);
+            library.addBook("B003", "To Kill a Mockingbird", 2023);
 
             // Register patrons
             library.registerPatron("P001", "Alice");
