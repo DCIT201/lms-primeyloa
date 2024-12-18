@@ -11,8 +11,8 @@ public class Library {
         }
 
         // Add book
-        public void addBook(String bookId, String title, String author) {
-            books.put(bookId, new Book(bookId, title, author));
+        public void addBook(String bookId, String title, String author, int yearPublished) {
+            books.put(bookId, new Book(title, author, yearPublished));
             System.out.println("Book added: " + title);
         }
 
