@@ -6,7 +6,7 @@ public class App {
             Library library = new Library();
 
             // Add books
-            library.addBook("B001", "The Great Gatsby", "Ulesses Ronan");
+            library.addBook("B001", "The Great Gatsby", "George Orwell");
             library.addBook("B002", "1984", "Mitch Peller");
             library.addBook("B003", "To Kill a Mockingbird", "Frank Furtick");
 
