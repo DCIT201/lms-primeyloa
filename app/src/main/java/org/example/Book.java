@@ -2,14 +2,15 @@ public class Book {
     private String bookId;
     private String title;
     private boolean isAvailable;
-    private String yearPublished;
+    private int yearPublished;
     private String author;
 
     // Constructor
-    public Book(String bookId, String title, String yearPublished, String author) {
+    public Book(String bookId, String title, int yearPublished, String author) {
         this.bookId = bookId;
         this.title = title;
         this.isAvailable = true;
+        this.yearPublished = yearPublished;
     }
 
     public Book(String bookId, String title) {
@@ -32,7 +33,7 @@ public class Book {
         this.author = author;
     }
 
-    public String getYearPublished() {
+    public int getYearPublished() {
         return yearPublished;
     }
     public void setYearPublished(){
