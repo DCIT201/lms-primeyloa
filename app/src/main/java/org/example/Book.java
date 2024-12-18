@@ -13,7 +13,7 @@ public class Book {
         this.yearPublished = yearPublished;
     }
 
-    public Book(String bookId, String title) {
+    public Book(String title, String author, int yearPublished) {
     }
 
     // Getters
