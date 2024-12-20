@@ -6,12 +6,6 @@ public class Book {
     private String author;
 
     // Constructor
-    public Book(String bookId, String title, int yearPublished, String author) {
-        this.bookId = bookId;
-        this.title = title;
-        this.isAvailable = true;
-        this.yearPublished = yearPublished;
-    }
     public Book(String title, String author, int yearPublished) {
         this.title = title;
         this.author = author;
