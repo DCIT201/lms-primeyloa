@@ -11,10 +11,6 @@ public class Book {
         this.author = author;
         this.yearPublished = yearPublished;
     }
-
-    public Book(String title, String author, int yearPublished) {
-    }
-
     // Getters
     public String getBookId() {
         return bookId;
